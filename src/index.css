@@ -1,0 +1,139 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+ font-family: "Outfit", sans-serif;
+ color: #fff;
+ height: 100vh;
+ overflow-x: hidden;
+ background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 8%;
+  min-height: 100vh;
+  position: relative;
+}
+.content h1{
+font-size: 3.5rem;
+line-height: 1.2;
+}
+.content h1 span{
+color: #00f0ff;
+}
+.content{
+  max-width: 600px;
+  z-index: 2;
+}
+.content p{
+ margin: 1.5rem 0 2rem;
+ font-size: 1.2rem;
+ color: #ddd;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #00f0ff;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn:hover{
+  background: #00cfd4;
+}
+.image-container{
+  max-width: 600px;
+  animation: slideIn 1.5s ease-out forwards;
+  /* opacity: 0; */
+}
+.image-container img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,255,255,0);
+}
+/* animations */
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+@keyframes slideIn{
+  0%{
+    opacity:0;
+    transform:translateX(20px);
+  }
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+.delay-1{
+  
+ animation-delay: 0.5s;
+}
+.delay-2{
+  
+ animation-delay: 1s;
+}
+
+
+
+.form-container{
+  display: flex ;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.form-container h1{
+  margin-bottom: 20px;
+  font-size: 2.5rem
+}
+.form-group input[type="text"] {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 20px;
+  padding: 20px;
+ 
+}
+/* Button inside form-group */
+.form-group button {
+   width: 100px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px 0px 20px;
+  cursor: pointer;
+  background-color: #0f2027;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Hover & click effects */
+.form-group button:hover {
+  background-color: #0056b3;
+  color: #0f2027;
+}
+
+/* .form-group button:active {
+  transform: scale(0.95);
+}  */
